@@ -1,1 +1,0 @@
-# eBibleTheology.github.io
