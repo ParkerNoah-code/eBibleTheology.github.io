@@ -13,51 +13,54 @@ h3 {
 h1 {
   text-align: center;
 }
-.week {
+ul {
+  padding-left: 20px;
+}
+.topic {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.week h2 {
+.topic h2 {
   color: #1a73e8;
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
 }
-.goal {
+.pink {
+  background-color: #fce3fa;
+  padding: 10px;
+  border-left: 4px solid #d62dd6;
+  margin-bottom: 10px;
+}
+.green {
+  background-color: #e8f5e9;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 4px solid #388e3c;
+}
+.blue {
   background-color: #e7f4ff;
   padding: 10px;
   border-left: 4px solid #1a73e8;
   margin-bottom: 10px;
 }
-ul {
-  padding-left: 20px;
-}
-.assignments {
+.grey {
   background-color: #f1f1f1;
   padding: 10px;
   margin: 10px 0;
   border-left: 4px solid #555;
 }
-.assignments ul {
-  list-style-type: square;
-}
-.deliverables {
-  background-color: #e8f5e9;
+.red {
+  background-color: #ffebee;
   padding: 10px;
   margin: 10px 0;
-  border-left: 4px solid #388e3c;
+  border-left: 4px solid #c62828;
 }
 .extracredit {
   background-color: #ddeff3;
   padding: 10px;
   margin: 10px 0;
   border-left: 4px solid #3f56a1;
-}
-.extra1 {
-  background-color: #f1b8c4;
-  padding: 10px;
-  margin: 10px 0;
-  border-left: 4px solid #d15969;
 }
