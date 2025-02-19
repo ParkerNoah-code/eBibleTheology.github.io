@@ -1,66 +1,195 @@
+/* General Body Styling */
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px auto; /* Changed to auto for horizontal centering */
-  background-color: #f9f9f9;
-  max-width: 1000px; /* Added max-width */
-  padding: 0 20px; /* Added padding for smaller screens */
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px;
+  line-height: 1.9;
+  text-align: justify;
+  color: #222;
+  margin: 40px auto;
+  background-color: #f5f5f5;
+  max-width: 850px;
+  padding: 30px;
 }
+
+/* Headings */
 h1,
 h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 2.4em;
+  text-transform: uppercase;
+  border-bottom: 3px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 2px solid #888;
+  padding-bottom: 8px;
+  margin-top: 35px;
+}
+
 h3 {
+  font-size: 22px;
+  font-style: italic;
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* Paragraphs */
+p {
+  text-indent: 30px;
+  margin-bottom: 20px;
+}
+
+.no-space p {
+  margin-bottom: 0;
+}
+
+/* Blockquotes - Formal Citation Styling */
+blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  border-left: 5px solid #555;
+  padding-left: 20px;
+  margin: 20px 40px;
   color: #333;
 }
-h1 {
-  text-align: center;
+
+/* Footnotes and Citations */
+sup {
+  font-size: 0.8em;
+  vertical-align: super;
+  color: #555;
 }
-ul {
-  padding-left: 20px;
+
+.footnote {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
 }
-.topic {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 15px;
+
+/* Lists */
+ul,
+ol {
+  padding-left: 40px;
   margin-bottom: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.topic h2 {
-  color: #1a73e8;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
+
+ul li,
+ol li {
+  margin-bottom: 8px;
 }
-.pink {
-  background-color: #fce3fa;
+
+/* Scholarly Content Box */
+.content {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code Blocks */
+pre {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #ddd;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.95em;
+  border: 1px solid #bbb;
+}
+
+th,
+td {
   padding: 10px;
-  border-left: 4px solid #d62dd6;
-  margin-bottom: 10px;
+  border: 1px solid #999;
 }
-.green {
-  background-color: #e8f5e9;
-  padding: 10px;
-  margin: 10px 0;
-  border-left: 4px solid #388e3c;
+
+th {
+  background-color: #ddd;
+  text-align: left;
 }
-.blue {
-  background-color: #e7f4ff;
-  padding: 10px;
-  border-left: 4px solid #1a73e8;
-  margin-bottom: 10px;
+
+/* Resources - Hanging Indent */
+.resource {
+  display: block;
+  padding-left: 30px;
+  text-indent: -30px;
+  margin-bottom: 15px;
+  line-height: 1.8;
 }
-.grey {
-  background-color: #f1f1f1;
-  padding: 10px;
-  margin: 10px 0;
-  border-left: 4px solid #555;
-}
-.red {
-  background-color: #ffebee;
-  padding: 10px;
-  margin: 10px 0;
-  border-left: 4px solid #c62828;
-}
-.extracredit {
-  background-color: #ddeff3;
-  padding: 10px;
-  margin: 10px 0;
-  border-left: 4px solid #3f56a1;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
 }
