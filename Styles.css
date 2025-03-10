@@ -54,6 +54,11 @@ p {
   margin-bottom: 20px;
 }
 
+/* Indented Paragraphs */
+.indented {
+  text-indent: 30px;
+}
+
 .no-space p {
   margin-bottom: 0;
 }
@@ -211,11 +216,11 @@ th {
 }
 
 .full-width-image {
-  width: 100vw;  
+  width: 100vw;
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 20px 0; 
-  border-radius: 0; 
-  border: none; 
+  margin: 20px 0;
+  border-radius: 0;
+  border: none;
 }
