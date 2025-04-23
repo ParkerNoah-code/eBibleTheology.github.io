@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px auto; /* Changed to auto for horizontal centering */
+    background-color: #f9f9f9;
+    max-width: 1000px; /* Added max-width */
+    padding: 0 20px; /* Added padding for smaller screens */
+  }
+  h1,
+  h2,
+  h3 {
+    color: #333;
+  }
+  h1 {
+    text-align: center;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  .topic {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .topic h2 {
+    color: #1a73e8;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+  .pink {
+    background-color: #fce3fa;
+    padding: 10px;
+    border-left: 4px solid #d62dd6;
+    margin-bottom: 10px;
+  }
+  .green {
+    background-color: #e8f5e9;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #388e3c;
+  }
+  .blue {
+    background-color: #e7f4ff;
+    padding: 10px;
+    border-left: 4px solid #1a73e8;
+    margin-bottom: 10px;
+  }
+  .grey {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #555;
+  }
+  .red {
+    background-color: #ffebee;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #c62828;
+  }
+  .extracredit {
+    background-color: #ddeff3;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #3f56a1;
+  }
