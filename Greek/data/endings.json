@@ -1,0 +1,52 @@
+{
+  "first_alpha": {
+    "nom_s": "α",
+    "gen_s": "ας",
+    "dat_s": "ᾳ",
+    "acc_s": "αν",
+    "nom_p": "αι",
+    "gen_p": "ῶν",
+    "dat_p": "αις",
+    "acc_p": "ας"
+  },
+  "first_eta": {
+    "nom_s": "η",
+    "gen_s": "ης",
+    "dat_s": "ῃ",
+    "acc_s": "ην",
+    "nom_p": "αι",
+    "gen_p": "ῶν",
+    "dat_p": "αις",
+    "acc_p": "ας"
+  },
+  "article_f": {
+    "nom_s": "ἡ",
+    "gen_s": "τῆς",
+    "dat_s": "τῇ",
+    "acc_s": "τήν",
+    "nom_p": "αἱ",
+    "gen_p": "τῶν",
+    "dat_p": "ταῖς",
+    "acc_p": "τάς"
+  },
+  "first_eta_irregular": {
+    "nom_s": "γῆ",
+    "gen_s": "γῆς",
+    "dat_s": "γῇ",
+    "acc_s": "γῆν",
+    "nom_p": "γαῖ",
+    "gen_p": "γῶν",
+    "dat_p": "γαῖς",
+    "acc_p": "γᾶς"
+  },
+  "first_alpha_irregular": {
+    "nom_s": "α",
+    "gen_s": "ας",
+    "dat_s": "ᾳ",
+    "acc_s": "αν",
+    "nom_p": "αι",
+    "gen_p": "ῶν",
+    "dat_p": "αις",
+    "acc_p": "ας"
+  }
+}

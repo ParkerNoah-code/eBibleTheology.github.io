@@ -1,0 +1,122 @@
+[
+  {
+    "gr": "ἀλήθεια",
+    "en": "truth",
+    "decl": "first_alpha",
+    "stem": "ἀληθει",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "φωνή",
+    "en": "voice",
+    "decl": "first_eta",
+    "stem": "φων",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "ἀγάπη",
+    "en": "love",
+    "decl": "first_eta",
+    "stem": "ἀγαπ",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "γῆ",
+    "en": "earth, land, ground",
+    "decl": "first_eta_irregular",
+    "stem": "γῆ",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "ζωή",
+    "en": "life",
+    "decl": "first_eta",
+    "stem": "ζω",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "ἁμαρτία",
+    "en": "sin",
+    "decl": "first_alpha",
+    "stem": "ἁμαρτι",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "βασιλεία",
+    "en": "kingdom, reign",
+    "decl": "first_alpha",
+    "stem": "βασιλει",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "δόξα",
+    "en": "glory, majesty",
+    "decl": "first_alpha_irregular",
+    "stem": "δοξ",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "ἐκκλησία",
+    "en": "congregation, assembly, church",
+    "decl": "first_alpha",
+    "stem": "ἐκκλησι",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "ἡμέρα",
+    "en": "day",
+    "decl": "first_alpha",
+    "stem": "ἡμερ",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "καρδία",
+    "en": "heart",
+    "decl": "first_alpha",
+    "stem": "καρδι",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "ὥρα",
+    "en": "hour",
+    "decl": "first_alpha",
+    "stem": "ὡρ",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "κεφαλή",
+    "en": "head",
+    "decl": "first_eta",
+    "stem": "κεφαλ",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "πέτρα",
+    "en": "rock, stone",
+    "decl": "first_alpha",
+    "stem": "πετρ",
+    "gender": "f",
+    "lesson": 2
+  },
+  {
+    "gr": "χώρα",
+    "en": "land, country, region",
+    "decl": "first_alpha",
+    "stem": "χωρ",
+    "gender": "f",
+    "lesson": 2
+  }
+]
