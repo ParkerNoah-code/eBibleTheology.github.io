@@ -198,3 +198,12 @@ button:hover {
   width: 100%;
   height: 100%;
 }
+
+.click-noun {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.click-noun:hover {
+  background-color: #e0ecff;
+}
