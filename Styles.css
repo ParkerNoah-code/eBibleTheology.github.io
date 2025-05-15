@@ -414,3 +414,7 @@ th {
     box-shadow: none !important;
   }
 }
+
+.tight-list li {
+  margin-bottom: 0;
+}
