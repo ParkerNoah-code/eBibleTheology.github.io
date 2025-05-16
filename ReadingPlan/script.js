@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   updateSuggestion();
   setupToggleButtons();
 
+  // Start with OT visible only
   toggleTestament("Old");
   document.getElementById("show-old").classList.add("active");
 
@@ -47,6 +48,7 @@ function generateCheckboxes() {
   const container = document.getElementById("book-groups");
   container.innerHTML = "";
 
+  // OLD TESTAMENT
   const otSections = ["Law", "Prophets", "Writings"];
   otSections.forEach((section) => {
     const sectionData = booksData.OldTestament[section];
@@ -73,14 +75,39 @@ function generateCheckboxes() {
     container.appendChild(sectionElement);
   });
 
+  // NEW TESTAMENT
   const ntElement = document.createElement("div");
   ntElement.className = "book-section";
   ntElement.setAttribute("data-testament", "New");
   ntElement.innerHTML = `<h3>New Testament</h3>`;
-  booksData.NewTestament.forEach((book) => {
-    ntElement.appendChild(renderBook(book));
-  });
+
+  for (const [groupName, books] of Object.entries(booksData.NewTestament)) {
+    const groupElement = document.createElement("div");
+
+    // Skip group headers for standalone categories
+    if (groupName !== "Acts" && groupName !== "Revelation") {
+      const title = document.createElement("h4");
+      title.textContent = formatNTGroupTitle(groupName);
+      groupElement.appendChild(title);
+    }
+
+    books.forEach((book) => {
+      groupElement.appendChild(renderBook(book));
+    });
+
+    ntElement.appendChild(groupElement);
+  }
+
   container.appendChild(ntElement);
+}
+
+function formatNTGroupTitle(name) {
+  const map = {
+    Gospels: "Gospels",
+    PaulineEpistles: "Pauline Epistles",
+    GeneralEpistles: "General Epistles",
+  };
+  return map[name] || name;
 }
 
 function renderBook(book) {
@@ -156,7 +183,7 @@ function getChapterCount(bookName) {
     booksData.OldTestament.Law,
     ...Object.values(booksData.OldTestament.Prophets),
     ...Object.values(booksData.OldTestament.Writings),
-    booksData.NewTestament
+    ...Object.values(booksData.NewTestament).flat()
   );
   const book = allBooks.find((b) => b.name === bookName);
   return book ? book.chapters : 0;
