@@ -1,0 +1,266 @@
+{
+  "OldTestament": [
+    {
+      "book": "Genesis",
+      "batchSize": 3
+    },
+    {
+      "book": "Exodus",
+      "batchSize": 3
+    },
+    {
+      "book": "Leviticus",
+      "batchSize": 2
+    },
+    {
+      "book": "Numbers",
+      "batchSize": 3
+    },
+    {
+      "book": "Deuteronomy",
+      "batchSize": 3
+    },
+    {
+      "book": "Joshua",
+      "batchSize": 3
+    },
+    {
+      "book": "Judges",
+      "batchSize": 3
+    },
+    {
+      "book": "1 Samuel",
+      "batchSize": 3
+    },
+    {
+      "book": "2 Samuel",
+      "batchSize": 3
+    },
+    {
+      "book": "1 Kings",
+      "batchSize": 3
+    },
+    {
+      "book": "2 Kings",
+      "batchSize": 3
+    },
+    {
+      "book": "Isaiah",
+      "batchSize": 4
+    },
+    {
+      "book": "Jeremiah",
+      "batchSize": 4
+    },
+    {
+      "book": "Ezekiel",
+      "batchSize": 4
+    },
+    {
+      "book": "Hosea",
+      "batchSize": 2
+    },
+    {
+      "book": "Joel",
+      "batchSize": 1
+    },
+    {
+      "book": "Amos",
+      "batchSize": 2
+    },
+    {
+      "book": "Obadiah",
+      "batchSize": 1
+    },
+    {
+      "book": "Jonah",
+      "batchSize": 1
+    },
+    {
+      "book": "Micah",
+      "batchSize": 2
+    },
+    {
+      "book": "Nahum",
+      "batchSize": 1
+    },
+    {
+      "book": "Habakkuk",
+      "batchSize": 1
+    },
+    {
+      "book": "Zephaniah",
+      "batchSize": 1
+    },
+    {
+      "book": "Haggai",
+      "batchSize": 1
+    },
+    {
+      "book": "Zechariah",
+      "batchSize": 2
+    },
+    {
+      "book": "Malachi",
+      "batchSize": 1
+    },
+    {
+      "book": "Psalms",
+      "batchSize": 5
+    },
+    {
+      "book": "Proverbs",
+      "batchSize": 2
+    },
+    {
+      "book": "Job",
+      "batchSize": 3
+    },
+    {
+      "book": "Song of Solomon",
+      "batchSize": 1
+    },
+    {
+      "book": "Ruth",
+      "batchSize": 1
+    },
+    {
+      "book": "Lamentations",
+      "batchSize": 1
+    },
+    {
+      "book": "Esther",
+      "batchSize": 2
+    },
+    {
+      "book": "Ecclesiastes",
+      "batchSize": 1
+    },
+    {
+      "book": "Daniel",
+      "batchSize": 2
+    },
+    {
+      "book": "Ezra-Nehemiah",
+      "batchSize": 3
+    },
+    {
+      "book": "1 Chronicles",
+      "batchSize": 3
+    },
+    {
+      "book": "2 Chronicles",
+      "batchSize": 3
+    }
+  ],
+  "NewTestament": [
+    {
+      "book": "Matthew",
+      "batchSize": 2
+    },
+    {
+      "book": "Mark",
+      "batchSize": 2
+    },
+    {
+      "book": "Luke",
+      "batchSize": 2
+    },
+    {
+      "book": "John",
+      "batchSize": 2
+    },
+    {
+      "book": "Acts",
+      "batchSize": 3
+    },
+    {
+      "book": "Romans",
+      "batchSize": 2
+    },
+    {
+      "book": "1 Corinthians",
+      "batchSize": 2
+    },
+    {
+      "book": "2 Corinthians",
+      "batchSize": 2
+    },
+    {
+      "book": "Galatians",
+      "batchSize": 1
+    },
+    {
+      "book": "Ephesians",
+      "batchSize": 1
+    },
+    {
+      "book": "Philippians",
+      "batchSize": 1
+    },
+    {
+      "book": "Colossians",
+      "batchSize": 1
+    },
+    {
+      "book": "1 Thessalonians",
+      "batchSize": 1
+    },
+    {
+      "book": "2 Thessalonians",
+      "batchSize": 1
+    },
+    {
+      "book": "1 Timothy",
+      "batchSize": 1
+    },
+    {
+      "book": "2 Timothy",
+      "batchSize": 1
+    },
+    {
+      "book": "Titus",
+      "batchSize": 1
+    },
+    {
+      "book": "Philemon",
+      "batchSize": 1
+    },
+    {
+      "book": "Hebrews",
+      "batchSize": 2
+    },
+    {
+      "book": "James",
+      "batchSize": 1
+    },
+    {
+      "book": "1 Peter",
+      "batchSize": 1
+    },
+    {
+      "book": "2 Peter",
+      "batchSize": 1
+    },
+    {
+      "book": "1 John",
+      "batchSize": 1
+    },
+    {
+      "book": "2 John",
+      "batchSize": 1
+    },
+    {
+      "book": "3 John",
+      "batchSize": 1
+    },
+    {
+      "book": "Jude",
+      "batchSize": 1
+    },
+    {
+      "book": "Revelation",
+      "batchSize": 2
+    }
+  ]
+}

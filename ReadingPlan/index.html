@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible Reading Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bible Reading Plan</h1>
+      <div id="suggestion-box">
+        <h2>Today's Reading</h2>
+        <p id="ot-suggestion">Old Testament: Loading...</p>
+        <p id="nt-suggestion">New Testament: Loading...</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="checkboxes">
+        <h2>Reading Progress</h2>
+        <div id="book-groups">
+          <!-- Populated dynamically -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <button id="reset-progress">Reset Progress</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
