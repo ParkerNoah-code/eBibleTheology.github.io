@@ -78,24 +78,24 @@ function generateCheckboxes() {
   // NEW TESTAMENT
   const ntElement = document.createElement("div");
   ntElement.className = "book-section";
-  ntElement.setAttribute("data-testament", "New");
-  ntElement.innerHTML = `<h3>New Testament</h3>`;
 
   for (const [groupName, books] of Object.entries(booksData.NewTestament)) {
-    const groupElement = document.createElement("div");
+    const sectionElement = document.createElement("div");
+    sectionElement.className = "book-section";
+    sectionElement.setAttribute("data-testament", "New");
 
-    // Skip group headers for standalone categories
+    // Skip adding a title for Acts and Revelation (they are lone books)
     if (groupName !== "Acts" && groupName !== "Revelation") {
-      const title = document.createElement("h4");
-      title.textContent = formatNTGroupTitle(groupName);
-      groupElement.appendChild(title);
+      const sectionTitle = document.createElement("h3");
+      sectionTitle.textContent = formatNTGroupTitle(groupName);
+      sectionElement.appendChild(sectionTitle);
     }
 
     books.forEach((book) => {
-      groupElement.appendChild(renderBook(book));
+      sectionElement.appendChild(renderBook(book));
     });
 
-    ntElement.appendChild(groupElement);
+    container.appendChild(sectionElement);
   }
 
   container.appendChild(ntElement);
