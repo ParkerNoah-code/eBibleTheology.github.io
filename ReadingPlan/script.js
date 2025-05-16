@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   loadProgress();
   generateCheckboxes();
   updateSuggestion();
+  setupToggleButtons();
+
+  toggleTestament("Old");
+  document.getElementById("show-old").classList.add("active");
 
   document.getElementById("reset-progress").addEventListener("click", () => {
     if (confirm("Reset all progress?")) {
@@ -48,31 +52,22 @@ function generateCheckboxes() {
     const sectionData = booksData.OldTestament[section];
     const sectionElement = document.createElement("div");
     sectionElement.className = "book-section";
+    sectionElement.setAttribute("data-testament", "Old");
     sectionElement.innerHTML = `<h3>${section}</h3>`;
-
-    const inlineContainer = document.createElement("div");
-    inlineContainer.className = "book-inline-container";
 
     if (typeof sectionData === "object" && !Array.isArray(sectionData)) {
       for (const subGroup in sectionData) {
-        const groupTitle = document.createElement("h4");
-        groupTitle.textContent = subGroup;
-        sectionElement.appendChild(groupTitle);
-
-        const subGroupInline = document.createElement("div");
-        subGroupInline.className = "book-inline-container";
-
+        const groupElement = document.createElement("div");
+        groupElement.innerHTML = `<h4>${subGroup}</h4>`;
         sectionData[subGroup].forEach((book) => {
-          subGroupInline.appendChild(renderBook(book));
+          groupElement.appendChild(renderBook(book));
         });
-
-        sectionElement.appendChild(subGroupInline);
+        sectionElement.appendChild(groupElement);
       }
     } else {
       sectionData.forEach((book) => {
-        inlineContainer.appendChild(renderBook(book));
+        sectionElement.appendChild(renderBook(book));
       });
-      sectionElement.appendChild(inlineContainer);
     }
 
     container.appendChild(sectionElement);
@@ -80,31 +75,24 @@ function generateCheckboxes() {
 
   const ntElement = document.createElement("div");
   ntElement.className = "book-section";
+  ntElement.setAttribute("data-testament", "New");
   ntElement.innerHTML = `<h3>New Testament</h3>`;
-
-  const ntInline = document.createElement("div");
-  ntInline.className = "book-inline-container";
-
   booksData.NewTestament.forEach((book) => {
-    ntInline.appendChild(renderBook(book));
+    ntElement.appendChild(renderBook(book));
   });
-
-  ntElement.appendChild(ntInline);
   container.appendChild(ntElement);
 }
 
 function renderBook(book) {
   const wrapper = document.createElement("div");
-  wrapper.className = "book-inline";
-
-  const title = document.createElement("span");
+  wrapper.className = "book";
+  const title = document.createElement("div");
   title.className = "book-title";
   title.textContent = book.name;
   wrapper.appendChild(title);
 
   const chaptersDiv = document.createElement("div");
   chaptersDiv.className = "chapter-checkboxes";
-
   for (let i = 1; i <= book.chapters; i++) {
     const label = document.createElement("label");
     const id = `${book.name} ${i}`;
@@ -122,7 +110,6 @@ function renderBook(book) {
       saveProgress();
       updateSuggestion();
     });
-
     label.appendChild(checkbox);
     label.appendChild(document.createTextNode(i));
     chaptersDiv.appendChild(label);
@@ -177,4 +164,34 @@ function getChapterCount(bookName) {
 
 function formatSuggestion({ book, start, end }) {
   return start === end ? `${book} ${start}` : `${book} ${start}–${end}`;
+}
+
+// Toggle control logic
+function setupToggleButtons() {
+  const showOld = document.getElementById("show-old");
+  const showNew = document.getElementById("show-new");
+
+  showOld.addEventListener("click", () => {
+    toggleTestament("Old");
+    showOld.classList.add("active");
+    showNew.classList.remove("active");
+  });
+
+  showNew.addEventListener("click", () => {
+    toggleTestament("New");
+    showNew.classList.add("active");
+    showOld.classList.remove("active");
+  });
+}
+
+function toggleTestament(target) {
+  const sections = document.querySelectorAll(".book-section");
+  sections.forEach((section) => {
+    const testament = section.getAttribute("data-testament");
+    if (target === "Old") {
+      section.style.display = testament === "Old" ? "block" : "none";
+    } else if (target === "New") {
+      section.style.display = testament === "New" ? "block" : "none";
+    }
+  });
 }

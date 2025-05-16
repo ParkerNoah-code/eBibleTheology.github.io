@@ -78,3 +78,18 @@ button {
 button:hover {
   background: #0056b3;
 }
+
+#toggle-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+#toggle-controls button {
+  background: #6c757d;
+}
+
+#toggle-controls button.active {
+  background: #28a745;
+}
