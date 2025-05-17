@@ -418,3 +418,61 @@ th {
 .tight-list li {
   margin-bottom: 0;
 }
+
+/* Flashcards */
+.flashcard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  width: 100%;
+  height: 100px;
+  perspective: 800px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primary, #4a4e69);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  /* font-size: clamp(1rem, 1.1vw, 1.2rem); */
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  word-break: break-word; /* Force wrapping on long entries */
+  white-space: normal; /* Ensure normal text wrapping */
+  line-height: 1.4;
+}
+
+.card-front {
+  background: var(--light, #f2e9e4);
+  color: var(--dark, #22223b);
+}
+
+.card-back {
+  background: var(--accent, #9a8c98);
+  color: #fff;
+  transform: rotateY(180deg);
+}
