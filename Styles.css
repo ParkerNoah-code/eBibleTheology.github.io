@@ -185,6 +185,11 @@ th {
     padding: 15px;
   }
 
+  .table {
+    overflow-x: auto;
+    display: block;
+  }
+
   .content {
     padding: 20px;
   }
