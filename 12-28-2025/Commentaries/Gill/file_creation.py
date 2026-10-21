@@ -48,9 +48,12 @@ html_template = """<!DOCTYPE html>
       <h2>Romans Commentary</h2>
       
     </div>
-  </body>
-</html>
-"""
+  <footer>
+      <p>&copy; 2026 eBibleCommentary. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>"""
 
 # File creation with content
 for file_name in file_names:
