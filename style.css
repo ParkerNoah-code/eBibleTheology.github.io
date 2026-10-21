@@ -5,7 +5,7 @@ html {
 body {
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.35;
   margin: 0;
   padding: 0 10px;
   background-color: #f2f2f2;
@@ -21,9 +21,9 @@ header {
   background-color: #333;
   background-image: url("cross_image.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 15%;
   color: white;
-  padding: 28px 10px 40px;
+  padding: 28px 10px 32px;
   text-align: center;
 }
 
@@ -53,6 +53,11 @@ main h3 {
   font-size: 16px;
   font-style: italic;
   font-weight: normal;
+}
+
+main p {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 a:link,
@@ -90,10 +95,12 @@ sup {
 
 .superscription {
   font-style: italic;
+  margin-bottom: 10px;
 }
 
 .selah {
   text-align: right;
+  margin: 0;
 }
 
 .hangingindent {
