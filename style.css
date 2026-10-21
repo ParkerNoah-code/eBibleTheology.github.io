@@ -1,0 +1,31 @@
+body {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: serif;
+    line-height: 1.6;
+}
+
+sup {
+    font-size: 0.7em;
+}
+
+.poetry {
+    margin: 0;
+}
+
+.indent {
+    margin-left: 2em;
+}
+
+.superscription {
+    font-style: italic;
+}
+
+.selah {
+    text-align: right;
+}
+
+nav {
+    margin: 20px 0;
+}
